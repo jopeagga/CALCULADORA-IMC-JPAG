@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffec4ec2ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body class="bg-dark">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header text-dark-tit">
+                                    <h3 class="text-dark-tit text-center mb-0 text-dark my-4">TABLA ÍNDICE DE MASA
+                                        CORPORAL</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="main-container">
+
+                                                <center>
+                                                    <div class="info-side">
+                                                        <div class="imc-info">
+                                                            <h3>IMC</h3>
+                                                            <p>Menos de 18,5</p>
+                                                            <p>Entre 18,5 y 24,9</p>
+                                                            <p>Entre 25 y 29,9</p>
+                                                            <p>Entre 30 y 34,9</p>
+                                                            <p>Entre 35 y 39,9</p>
+                                                            <p>Más de 40</p>
+                                                        </div>
+                                                        <div class="imc-info2">
+                                                            <h3>RESULTADO</h3>
+                                                            <p>Peso insuficiente</p>
+                                                            <p>Peso normal</p>
+                                                            <p>Sobrepeso</p>
+                                                            <p>Obesidad Grado 1</p>
+                                                            <p>Obesidad Grado 2</p>
+                                                            <p>Obesidad Grado 3</p>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="container center col s12">
+                                                        <h2 class="center">Calculadora de IMC</h2>
+
+                                                        <div class="row">
+                                                            <div class="input-field col s6">
+                                                                <input autofocus id="inputPeso" type="number" />
+                                                                <label for="inputPeso">Ingrese su peso en KL
+                                                                    (Kilogramos)</label>
+                                                            </div>
+
+                                                            <div class="input-field col s6">
+                                                                <input autofocus id="inputAltura" type="number" />
+                                                                <label for="inputAltura">Ingrese su altura en CM
+                                                                    (Centímetros)</label>
+                                                            </div>
+                                                        </div>
+                                                        <a class="btn btn_iniSes btn-block"
+                                                            onclick="calculaIMC()">IMC</a>
+                                                        <h4 id="indiceIMC"></h4>
+                                                        <h6 id="classificacaoIMC"></h6>
+                                                    </div>
+                                                </center>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="JS/index.js"></script>
+</body>
+</html>
